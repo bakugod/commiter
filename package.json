@@ -1,0 +1,19 @@
+{
+  "name": "commiter",
+  "version": "0.2.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node cm.js"
+  },
+  "keywords": [
+    "bot",
+    "commit",
+    "git"
+  ],
+  "author": "me",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
