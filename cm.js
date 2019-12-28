@@ -18,6 +18,6 @@ for (let i = 0; i < 4; i++) {
       //   console.log("stderr: " + data);
       // });
     }),
-    3000
+    i * 1000
   );
 }
