@@ -17,6 +17,6 @@ for (let i = 0; i < 4; i++) {
         console.log("stderr: " + data);
       });
     }),
-    2000
+    3000
   );
 }
