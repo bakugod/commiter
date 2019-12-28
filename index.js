@@ -4,9 +4,10 @@ const dayjs = require("dayjs");
 const dateNow = () => dayjs(new Date()).format("MMM D YYYY HH:mm:ss");
 
 0<<function() {
-  fs.readFile("./index.js", "utf8", (error, data) => {
-    if (error) {
-      return console.log(error);
+    console.time('update file')
+    fs.readFile("./index.js", "utf8", (error, data) => {
+      if (error) {
+      return console.error(error);
     }
 
     fs.writeFile(
@@ -14,48 +15,11 @@ const dateNow = () => dayjs(new Date()).format("MMM D YYYY HH:mm:ss");
       `${data} \n//${dateNow()}`,
       error => {
         if (error) {
-          return console.log(error);
+          return console.error(error);
         }
-        console.log("The file was saved!");
+        console.timeEnd('update file')
       }
     );
   });
-}();
- 
-//Dec 28 2019 22:36:31 
-//Dec 28 2019 22:36:31 
-//Dec 28 2019 22:36:31 
-//Dec 28 2019 22:36:31 
-//Dec 28 2019 22:36:59 
-//Dec 28 2019 22:36:59 
-//Dec 28 2019 22:36:59 
-//Dec 28 2019 22:36:59 
-//Dec 28 2019 22:38:22 
-//Dec 28 2019 22:38:22 
-//Dec 28 2019 22:38:22 
-//Dec 28 2019 22:39:09 
-//Dec 28 2019 22:39:09 
-//Dec 28 2019 22:39:09 
-//Dec 28 2019 22:39:09 
-//Dec 28 2019 22:41:14 
-//Dec 28 2019 22:41:14 
-//Dec 28 2019 22:41:14 
-//Dec 28 2019 22:41:34 
-//Dec 28 2019 22:41:35 
-//Dec 28 2019 22:41:36 
-//Dec 28 2019 22:41:37 
-//Dec 28 2019 22:46:34 
-//Dec 28 2019 22:46:35 
-//Dec 28 2019 22:46:36 
-//Dec 28 2019 22:46:37 
-//Dec 28 2019 22:53:01 
-//Dec 28 2019 22:53:02 
-//Dec 28 2019 22:53:03 
-//Dec 28 2019 22:53:04 
-//Dec 28 2019 22:53:05 
-//Dec 28 2019 22:54:16 
-//Dec 28 2019 22:54:17 
-//Dec 28 2019 22:54:18 
-//Dec 28 2019 22:54:19 
-//Dec 28 2019 22:54:20 
-//Dec 28 2019 22:54:21
+}(); 
+//Dec 28 2019 23:03:02
