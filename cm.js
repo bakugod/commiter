@@ -5,7 +5,7 @@ const dateNow = () => dayjs(new Date()).format("MMM D YYYY HH:mm:ss");
 
 for (let i = 0; i < 4; i++) {
   setTimeout(
-    () => exec("git pull", () => {
+    (i) => exec("git pull", () => {
       const worker = exec(
         `node index.js && git add . && git commit -m "${dateNow()}" && git push`
       );
@@ -17,6 +17,6 @@ for (let i = 0; i < 4; i++) {
         console.log("stderr: " + data);
       });
     }),
-    1000
+    2000
   );
 }
