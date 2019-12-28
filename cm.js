@@ -44,7 +44,7 @@ const templateString = `\n//${Math.random() * Date.parse(new Date())}`;
     }
   })(6);
 
-const dateNow = () => dayjs(new Date()).format("MMM D YYYY HH:mm");
+const dateNow = () => dayjs(new Date()).format("MMM D YYYY HH:mm:ss");
 
 exec(`git add . && git commit -m "${dateNow()}" && git push`, error => {
   console.error(error);
