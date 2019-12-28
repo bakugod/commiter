@@ -1,4 +1,5 @@
 const fs = require("fs");
+const dayjs = require("dayjs");
 const { exec } = require("child_process");
 
 function rand() {
@@ -43,10 +44,11 @@ const templateString = `\n//${Math.random() * Date.parse(new Date())}`;
     }
   })(6);
 
-exec(`git add . && git commit -m "${Date()}" && git push`, error => {
+const dateNow = () => dayjs(new Date()).format("MMM D YYYY HH:mm");
+
+exec(`git add . && git commit -m "${dateNow()}" && git push`, error => {
   console.error(error);
 });
-
 
 // const fs = require("fs");
 
