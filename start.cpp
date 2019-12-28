@@ -5,8 +5,8 @@
 
 int main()
 {
-	Sleep(10000);
-	char command[11] = "node cm.js";
+	Sleep(1000);
+	char command[100] = "cd C:\\Users\\PCUSER\\Desktop\\commiter && node cm.js";
 	std::cout << "Compiling file using " << command << std::endl;
 	system(command);
 	return 0;
