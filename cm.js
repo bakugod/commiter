@@ -46,9 +46,12 @@ const templateString = `\n//${Math.random() * Date.parse(new Date())}`;
 
 const dateNow = () => dayjs(new Date()).format("MMM D YYYY HH:mm:ss");
 
-exec(`git add . && git commit -m "${dateNow()}" && git push`, error => {
-  console.error(error);
-});
+exec(
+  `git add . && git commit -m "${dateNow()}" && git push`,
+  (error, stdout, stderr) => {
+    console.error(error, stdout, stderr);
+  }
+);
 
 // const fs = require("fs");
 
