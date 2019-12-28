@@ -14,7 +14,7 @@ function createWorkers() {
       console.log("\x1b[36m%s\x1b[0m", "stdout: " + data);
     });
     worker.stderr.on("data", data => {
-      console.log("\x1b[31m", "stderr: " + data);
+      console.log("\x1b[30m%s\x1b[0m", "stderr: " + data);
     });
   });
 }
