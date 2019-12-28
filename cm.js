@@ -43,9 +43,10 @@ const templateString = `\n//${Math.random() * Date.parse(new Date())}`;
     }
   })(6);
 
-exec("git add . && git commit && git push", error => {
+exec(`git add . && git commit -m "${Date()}" && git push`, error => {
   console.error(error);
 });
+
 
 // const fs = require("fs");
 
