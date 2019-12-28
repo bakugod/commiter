@@ -1,6 +1,6 @@
 {
   "name": "commiter",
-  "version": "0.2.1",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "commit",
     "git"
   ],
-  "author": "me",
+  "author": "bakugod",
   "license": "MIT",
   "dependencies": {
     "dayjs": "^1.8.18",
