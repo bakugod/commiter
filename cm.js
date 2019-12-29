@@ -2,7 +2,7 @@ const dayjs = require("dayjs");
 const { exec } = require("child_process");
 
 const dateNow = () => dayjs(new Date()).format("MMM D YYYY HH:mm:ss");
-const rand = (() => (Math.random() * 6 + 4) | 0)();
+const rand = (() => (Math.random() * 50 + 25) | 0)();
 
 function createWorkers() {
   exec("git pull", () => {
@@ -19,6 +19,6 @@ function createWorkers() {
   });
 }
 
-for (let i = 0; i < 300; i++) {
-  setTimeout(createWorkers, i * 500);
+for (let i = 0; i < rand; i++) {
+  setTimeout(createWorkers, i * 1000);
 }
