@@ -20,5 +20,5 @@ function createWorkers() {
 }
 
 for (let i = 0; i < 300; i++) {
-  setTimeout(createWorkers, i * 5000);
+  setTimeout(createWorkers, i * 500);
 }
