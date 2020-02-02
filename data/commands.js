@@ -1,9 +1,1 @@
-module.exports = {
-  mov: "mov",
-  sub: "sub",
-  aas: "aas",
-  add: "add",
-  int: "int",
-  or: "or",
-  and: "and"
-};
+module.exports = ["mov", "sub", "aas", "add", "int", "or", "and", "set", "res"];
