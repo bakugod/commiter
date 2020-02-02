@@ -28,4 +28,5 @@ section	.data
 msg db 'The Result is:',0xa	
 len equ $ - msg			
 section .bss
-res resb 1   
+res resb 1    
+//Feb 2 2020 15:31:06
