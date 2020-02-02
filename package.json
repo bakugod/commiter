@@ -14,7 +14,7 @@
   "author": "bakugod",
   "license": "MIT",
   "dependencies": {
-    "dayjs": "^1.8.18",
+    "dayjs": "^1.8.19",
     "fs": "0.0.1-security"
   }
 }

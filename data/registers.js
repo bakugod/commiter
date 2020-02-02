@@ -1,0 +1,22 @@
+module.exports = {
+  eax: "eax",
+  ebx: "ebx",
+  ecx: "ecx",
+  edx: "edx",
+  ax: "ax",
+  al: "al",
+  ah: "ah",
+  bx: "bx",
+  cx: "cx",
+  dx: "dx",
+  eip: "eip",
+  esp: "esp",
+  ebp: "ebp",
+  ip: "ip",
+  sp: "sp",
+  bp: "bp",
+  esi: "esi",
+  edi: "edi",
+  si: "si",
+  di: "di"
+};
