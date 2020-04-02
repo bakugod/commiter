@@ -4,13 +4,9 @@ global _start        ;must be declared for using gcc
     
 _start:	           ;tell linker entry point
 
-and	edx,esp
-set	dx,ecx
-mov	edx,edi
-or	esi,ax
-int	edi,ax
-set	bx,dx
-mov	bx,bp
+mov	ah,ecx
+set	bp,di
+res	ebx,eax
 
 
 mov	eax,1	        ;system call number (sys_exit)
@@ -21,4 +17,3 @@ msg db 'The Result is:',0xa	;stdout data
 len equ $ - msg			    ;data length
 section .bss
 res resb 1
- 1
