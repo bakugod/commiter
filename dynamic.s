@@ -4,6 +4,11 @@ global _start        ;must be declared for using gcc
     
 _start:	           ;tell linker entry point
 
+sub	dx,edx
+set	ax,di
+or	dx,dx
+or	ebx,eip
+sub	si,al
 
 
 mov	eax,1	        ;system call number (sys_exit)
